@@ -1,5 +1,6 @@
 'use strict';
 
+const Sequelize = require('sequelize');
 const express = require('express');
 const log4js = require('./lib/log4js');
 const logger = log4js.getLogger('express');
@@ -18,6 +19,17 @@ app.use(function(err, req, res, next) {
     logger.error('Catch error:', err);
     res.status(500);
     res.json({status: 'error', message: err.message});
+});
+
+const sequelize = new Sequelize('mysql://root@localhost:3306/market');
+
+sequelize
+    .authenticate()
+    .then(() => {
+    console.log('DB connection has been established successfully.');
+})
+.catch(err => {
+    console.error('Unable to connect to the database:', err);
 });
 
 module.exports = app;
