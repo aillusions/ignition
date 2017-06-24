@@ -1,0 +1,20 @@
+{
+  "name": "ignition",
+  "version": "0.0.1",
+  "description": "",
+  "author": "aillusions",
+  "private": "true",
+  "main": "app.js",
+  "dependencies": {
+    "bluebird": "^3.3.4",
+    "cheerio": "^0.20.0",
+    "dotenv": "^2.0.0",
+    "express": "^4.13.4",
+    "faker": "^3.1.0",
+    "forever": "^0.15.1",
+    "lodash": "^4.6.1",
+    "log4js": "^0.6.33",
+    "q": "^1.4.1",
+    "request-promise": "^2.0.1"
+  }
+}

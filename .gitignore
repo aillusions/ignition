@@ -1,0 +1,10 @@
+**/.idea/**
+**/node_modules/**
+**/.svn/**
+**/*.iml
+**/*.log
+**/classes
+**/target/**
+**/**.log
+**/.DS_Store
+.DS_Store
